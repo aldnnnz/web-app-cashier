@@ -18,14 +18,13 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar fixed app>
-      <v-toolbar-title>{{ title }}</v-toolbar-title>
-    </v-app-bar>
+
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
+
     <v-bottom-navigation 
         horizontal 
         height="10vh" 
@@ -76,9 +75,6 @@ export default {
           to: "/",
         }
       ],
-      right: true,
-      rightDrawer: false,
-      title: "Kacir",
     };
   },
 };
